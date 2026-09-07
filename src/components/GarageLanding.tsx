@@ -129,7 +129,6 @@ function SectionHeading({
 }) {
   return (
     <header className={`section-heading section-heading-${align} reveal`}>
-      <p className="eyebrow"><span />{eyebrow}</p>
       <h2>{title}</h2>
       {intro ? <p className="section-intro">{intro}</p> : null}
     </header>
@@ -269,8 +268,6 @@ export default function GarageLanding({ locale }: { locale: Locale }) {
         <section className="hero" id="home">
           <div className="hero-grid" aria-hidden="true" />
           <div className="hero-content">
-            <p className="eyebrow hero-eyebrow"><span />{c.hero.eyebrow}</p>
-            <p className="hero-kicker">{c.hero.kicker}</p>
             <h1>{c.hero.title}</h1>
             <p className="hero-description">{c.hero.description}</p>
             <div className="hero-actions">
@@ -468,7 +465,6 @@ export default function GarageLanding({ locale }: { locale: Locale }) {
           <Image src="/images/paint-process.webp" alt="" fill sizes="100vw" />
           <div className="video-overlay" />
           <div className="video-copy reveal">
-            <p className="eyebrow"><span />{c.video.eyebrow}</p>
             <h2>{c.video.title}</h2>
             <p>{c.video.subtitle}</p>
           </div>
@@ -530,7 +526,6 @@ export default function GarageLanding({ locale }: { locale: Locale }) {
           <Image src="/images/after-repair.webp" alt="" fill sizes="100vw" />
           <div className="final-cta-shade" />
           <div className="final-cta-content reveal">
-            <p className="eyebrow"><span />{c.finalCta.eyebrow}</p>
             <h2>{c.finalCta.title}</h2>
             <p>{c.finalCta.body}</p>
             <div className="hero-actions">
