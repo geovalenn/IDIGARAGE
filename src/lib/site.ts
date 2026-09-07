@@ -23,7 +23,7 @@ export function isPlaceholder(value: string) {
 
 export function whatsappUrl(message: string) {
   if (isPlaceholder(siteConfig.whatsapp)) return null;
-  const number = siteConfig.whatsapp.replace(/\D/g, "");
+  const number = siteConfig.whatsapp.replace(/\D/g, "").replace(/^0/, "62");
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
 
